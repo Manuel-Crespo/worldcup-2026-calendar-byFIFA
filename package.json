@@ -1,0 +1,57 @@
+{
+  "name": "worldcup-2026-calendar",
+  "version": "1.0.0",
+  "description": "Generate RFC5545-compliant .ics calendar files for all 104 FIFA World Cup 2026 matches using official data from the FIFA API",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "generate": "tsx src/index.ts",
+    "generate:all": "tsx src/generators/generateAllCalendars.ts",
+    "generate:teams": "tsx src/generators/generateTeamCalendars.ts",
+    "generate:groups": "tsx src/generators/generateGroupCalendars.ts",
+    "generate:knockout": "tsx src/generators/generateKnockoutCalendars.ts",
+    "validate": "tsx src/scripts/validateMatches.ts",
+    "validate:live": "tsx src/scripts/validateMatches.ts --live",
+    "fetch-data": "tsx src/scripts/fetchOfficialData.ts",
+    "update-data": "tsx src/scripts/updateOfficialData.ts",
+    "lint": "eslint src/ --ext .ts",
+    "lint:fix": "eslint src/ --ext .ts --fix",
+    "format": "prettier --write 'src/**/*.ts'",
+    "format:check": "prettier --check 'src/**/*.ts'",
+    "clean": "rm -rf dist output",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "fifa",
+    "world-cup",
+    "2026",
+    "calendar",
+    "ics",
+    "ical",
+    "schedule"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ical-generator": "^8.0.0",
+    "luxon": "^3.5.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.10.0",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.15.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

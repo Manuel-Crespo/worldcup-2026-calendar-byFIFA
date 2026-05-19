@@ -1,0 +1,88 @@
+{
+  "groups": {
+    "A": {
+      "name": "Group A",
+      "color": "#22C55E",
+      "colorName": "green",
+      "teams": ["MEX", "RSA", "KOR", "CZE"],
+      "hostCities": ["Mexico City", "Guadalajara"]
+    },
+    "B": {
+      "name": "Group B",
+      "color": "#3B82F6",
+      "colorName": "blue",
+      "teams": ["CAN", "BIH", "QAT", "SUI"],
+      "hostCities": ["Toronto", "Santa Clara"]
+    },
+    "C": {
+      "name": "Group C",
+      "color": "#EAB308",
+      "colorName": "yellow",
+      "teams": ["BRA", "MAR", "HAI", "SCO"],
+      "hostCities": ["East Rutherford", "Foxborough"]
+    },
+    "D": {
+      "name": "Group D",
+      "color": "#EF4444",
+      "colorName": "red",
+      "teams": ["USA", "PAR", "TUR", "AUS"],
+      "hostCities": ["Inglewood", "Seattle", "Vancouver"]
+    },
+    "E": {
+      "name": "Group E",
+      "color": "#A855F7",
+      "colorName": "purple",
+      "teams": ["GER", "CUW", "CIV", "ECU"],
+      "hostCities": ["Arlington", "Houston"]
+    },
+    "F": {
+      "name": "Group F",
+      "color": "#F97316",
+      "colorName": "orange",
+      "teams": ["NED", "JPN", "SWE", "TUN"],
+      "hostCities": ["Atlanta", "Miami Gardens"]
+    },
+    "G": {
+      "name": "Group G",
+      "color": "#EC4899",
+      "colorName": "pink",
+      "teams": ["BEL", "EGY", "IRN", "NZL"],
+      "hostCities": ["Philadelphia", "Kansas City"]
+    },
+    "H": {
+      "name": "Group H",
+      "color": "#14B8A6",
+      "colorName": "teal",
+      "teams": ["ESP", "CPV", "KSA", "URU"],
+      "hostCities": ["Houston", "Arlington"]
+    },
+    "I": {
+      "name": "Group I",
+      "color": "#6366F1",
+      "colorName": "indigo",
+      "teams": ["FRA", "SEN", "IRQ", "NOR"],
+      "hostCities": ["Philadelphia", "Kansas City"]
+    },
+    "J": {
+      "name": "Group J",
+      "color": "#F43F5E",
+      "colorName": "rose",
+      "teams": ["ARG", "ALG", "AUT", "JOR"],
+      "hostCities": ["Atlanta", "Miami Gardens"]
+    },
+    "K": {
+      "name": "Group K",
+      "color": "#84CC16",
+      "colorName": "lime",
+      "teams": ["POR", "COD", "UZB", "COL"],
+      "hostCities": ["East Rutherford", "Foxborough"]
+    },
+    "L": {
+      "name": "Group L",
+      "color": "#06B6D4",
+      "colorName": "cyan",
+      "teams": ["ENG", "CRO", "GHA", "PAN"],
+      "hostCities": ["Toronto", "Santa Clara"]
+    }
+  }
+}

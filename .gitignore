@@ -1,0 +1,7 @@
+node_modules/
+dist/
+output/
+.env
+*.log
+.DS_Store
+src/data/fifa_api_cache.json

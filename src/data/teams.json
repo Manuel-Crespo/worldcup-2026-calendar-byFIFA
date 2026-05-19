@@ -1,0 +1,63 @@
+{
+  "teams": [
+    { "id": "MEX", "name": "Mexico", "code": "MEX", "flag": "🇲🇽", "confederation": "CONCACAF", "group": "A", "fifaRanking": 15 },
+    { "id": "RSA", "name": "South Africa", "code": "RSA", "flag": "🇿🇦", "confederation": "CAF", "group": "A", "fifaRanking": 57 },
+    { "id": "KOR", "name": "Korea Republic", "code": "KOR", "flag": "🇰🇷", "confederation": "AFC", "group": "A", "fifaRanking": 22 },
+    { "id": "CZE", "name": "Czechia", "code": "CZE", "flag": "🇨🇿", "confederation": "UEFA", "group": "A", "fifaRanking": 36 },
+
+    { "id": "CAN", "name": "Canada", "code": "CAN", "flag": "🇨🇦", "confederation": "CONCACAF", "group": "B", "fifaRanking": 38 },
+    { "id": "BIH", "name": "Bosnia and Herzegovina", "code": "BIH", "flag": "🇧🇦", "confederation": "UEFA", "group": "B", "fifaRanking": 64 },
+    { "id": "QAT", "name": "Qatar", "code": "QAT", "flag": "🇶🇦", "confederation": "AFC", "group": "B", "fifaRanking": 35 },
+    { "id": "SUI", "name": "Switzerland", "code": "SUI", "flag": "🇨🇭", "confederation": "UEFA", "group": "B", "fifaRanking": 16 },
+
+    { "id": "BRA", "name": "Brazil", "code": "BRA", "flag": "🇧🇷", "confederation": "CONMEBOL", "group": "C", "fifaRanking": 5 },
+    { "id": "MAR", "name": "Morocco", "code": "MAR", "flag": "🇲🇦", "confederation": "CAF", "group": "C", "fifaRanking": 13 },
+    { "id": "HAI", "name": "Haiti", "code": "HAI", "flag": "🇭🇹", "confederation": "CONCACAF", "group": "C", "fifaRanking": 85 },
+    { "id": "SCO", "name": "Scotland", "code": "SCO", "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "confederation": "UEFA", "group": "C", "fifaRanking": 39 },
+
+    { "id": "USA", "name": "United States", "code": "USA", "flag": "🇺🇸", "confederation": "CONCACAF", "group": "D", "fifaRanking": 11 },
+    { "id": "PAR", "name": "Paraguay", "code": "PAR", "flag": "🇵🇾", "confederation": "CONMEBOL", "group": "D", "fifaRanking": 50 },
+    { "id": "TUR", "name": "Türkiye", "code": "TUR", "flag": "🇹🇷", "confederation": "UEFA", "group": "D", "fifaRanking": 26 },
+    { "id": "AUS", "name": "Australia", "code": "AUS", "flag": "🇦🇺", "confederation": "AFC", "group": "D", "fifaRanking": 24 },
+
+    { "id": "GER", "name": "Germany", "code": "GER", "flag": "🇩🇪", "confederation": "UEFA", "group": "E", "fifaRanking": 12 },
+    { "id": "CUW", "name": "Curaçao", "code": "CUW", "flag": "🇨🇼", "confederation": "CONCACAF", "group": "E", "fifaRanking": 90 },
+    { "id": "CIV", "name": "Ivory Coast", "code": "CIV", "flag": "🇨🇮", "confederation": "CAF", "group": "E", "fifaRanking": 33 },
+    { "id": "ECU", "name": "Ecuador", "code": "ECU", "flag": "🇪🇨", "confederation": "CONMEBOL", "group": "E", "fifaRanking": 28 },
+
+    { "id": "NED", "name": "Netherlands", "code": "NED", "flag": "🇳🇱", "confederation": "UEFA", "group": "F", "fifaRanking": 3 },
+    { "id": "JPN", "name": "Japan", "code": "JPN", "flag": "🇯🇵", "confederation": "AFC", "group": "F", "fifaRanking": 14 },
+    { "id": "SWE", "name": "Sweden", "code": "SWE", "flag": "🇸🇪", "confederation": "UEFA", "group": "F", "fifaRanking": 41 },
+    { "id": "TUN", "name": "Tunisia", "code": "TUN", "flag": "🇹🇳", "confederation": "CAF", "group": "F", "fifaRanking": 37 },
+
+    { "id": "BEL", "name": "Belgium", "code": "BEL", "flag": "🇧🇪", "confederation": "UEFA", "group": "G", "fifaRanking": 6 },
+    { "id": "EGY", "name": "Egypt", "code": "EGY", "flag": "🇪🇬", "confederation": "CAF", "group": "G", "fifaRanking": 32 },
+    { "id": "IRN", "name": "Iran", "code": "IRN", "flag": "🇮🇷", "confederation": "AFC", "group": "G", "fifaRanking": 21 },
+    { "id": "NZL", "name": "New Zealand", "code": "NZL", "flag": "🇳🇿", "confederation": "OFC", "group": "G", "fifaRanking": 95 },
+
+    { "id": "ESP", "name": "Spain", "code": "ESP", "flag": "🇪🇸", "confederation": "UEFA", "group": "H", "fifaRanking": 1 },
+    { "id": "CPV", "name": "Cape Verde", "code": "CPV", "flag": "🇨🇻", "confederation": "CAF", "group": "H", "fifaRanking": 68 },
+    { "id": "KSA", "name": "Saudi Arabia", "code": "KSA", "flag": "🇸🇦", "confederation": "AFC", "group": "H", "fifaRanking": 55 },
+    { "id": "URU", "name": "Uruguay", "code": "URU", "flag": "🇺🇾", "confederation": "CONMEBOL", "group": "H", "fifaRanking": 9 },
+
+    { "id": "FRA", "name": "France", "code": "FRA", "flag": "🇫🇷", "confederation": "UEFA", "group": "I", "fifaRanking": 2 },
+    { "id": "SEN", "name": "Senegal", "code": "SEN", "flag": "🇸🇳", "confederation": "CAF", "group": "I", "fifaRanking": 17 },
+    { "id": "IRQ", "name": "Iraq", "code": "IRQ", "flag": "🇮🇶", "confederation": "AFC", "group": "I", "fifaRanking": 62 },
+    { "id": "NOR", "name": "Norway", "code": "NOR", "flag": "🇳🇴", "confederation": "UEFA", "group": "I", "fifaRanking": 43 },
+
+    { "id": "ARG", "name": "Argentina", "code": "ARG", "flag": "🇦🇷", "confederation": "CONMEBOL", "group": "J", "fifaRanking": 4 },
+    { "id": "ALG", "name": "Algeria", "code": "ALG", "flag": "🇩🇿", "confederation": "CAF", "group": "J", "fifaRanking": 29 },
+    { "id": "AUT", "name": "Austria", "code": "AUT", "flag": "🇦🇹", "confederation": "UEFA", "group": "J", "fifaRanking": 25 },
+    { "id": "JOR", "name": "Jordan", "code": "JOR", "flag": "🇯🇴", "confederation": "AFC", "group": "J", "fifaRanking": 70 },
+
+    { "id": "POR", "name": "Portugal", "code": "POR", "flag": "🇵🇹", "confederation": "UEFA", "group": "K", "fifaRanking": 7 },
+    { "id": "COD", "name": "Congo DR", "code": "COD", "flag": "🇨🇩", "confederation": "CAF", "group": "K", "fifaRanking": 48 },
+    { "id": "UZB", "name": "Uzbekistan", "code": "UZB", "flag": "🇺🇿", "confederation": "AFC", "group": "K", "fifaRanking": 60 },
+    { "id": "COL", "name": "Colombia", "code": "COL", "flag": "🇨🇴", "confederation": "CONMEBOL", "group": "K", "fifaRanking": 10 },
+
+    { "id": "ENG", "name": "England", "code": "ENG", "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "confederation": "UEFA", "group": "L", "fifaRanking": 8 },
+    { "id": "CRO", "name": "Croatia", "code": "CRO", "flag": "🇭🇷", "confederation": "UEFA", "group": "L", "fifaRanking": 18 },
+    { "id": "GHA", "name": "Ghana", "code": "GHA", "flag": "🇬🇭", "confederation": "CAF", "group": "L", "fifaRanking": 44 },
+    { "id": "PAN", "name": "Panama", "code": "PAN", "flag": "🇵🇦", "confederation": "CONCACAF", "group": "L", "fifaRanking": 42 }
+  ]
+}
