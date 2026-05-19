@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA World Cup 2026™ Calendar — Subscribe</title>
+  <meta name="description" content="Subscribe to live-updating .ics calendar files for all 104 FIFA World Cup 2026 matches. Official data from FIFA API.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --surface: #111827;
+      --surface-hover: #1a2235;
+      --border: #1e293b;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59,130,246,.15);
+      --green: #22c55e;
+      --gold: #eab308;
+      --radius: 12px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+
+    .hero {
+      text-align:center; padding:3rem 1.5rem 2rem;
+      background: linear-gradient(180deg, rgba(59,130,246,.08) 0%, transparent 100%);
+    }
+    .hero h1 { font-size:2.5rem; font-weight:800; margin-bottom:.5rem; }
+    .hero p { color:var(--text-muted); font-size:1.1rem; max-width:600px; margin:0 auto; }
+    .hero .badge {
+      display:inline-block; margin-top:1rem; padding:.35rem .9rem;
+      background:var(--accent-glow); color:var(--accent); border:1px solid rgba(59,130,246,.3);
+      border-radius:20px; font-size:.8rem; font-weight:600;
+    }
+
+    .container { max-width:900px; margin:0 auto; padding:0 1.5rem 3rem; }
+
+    /* Full tournament CTA */
+    .cta-card {
+      background: linear-gradient(135deg, #1e3a5f 0%, #1a2744 100%);
+      border:1px solid rgba(59,130,246,.25); border-radius:var(--radius);
+      padding:1.8rem; margin-bottom:2rem; text-align:center;
+    }
+    .cta-card h2 { font-size:1.3rem; margin-bottom:.5rem; }
+    .cta-card .url-box {
+      display:flex; gap:.5rem; margin:1rem auto 0; max-width:620px;
+    }
+    .cta-card input {
+      flex:1; padding:.65rem .9rem; background:#0d1525; color:var(--text);
+      border:1px solid var(--border); border-radius:8px; font-family:monospace; font-size:.82rem;
+    }
+    .cta-card button, .btn {
+      padding:.65rem 1.2rem; background:var(--accent); color:#fff; border:none;
+      border-radius:8px; font-weight:600; cursor:pointer; font-size:.85rem;
+      transition: background .2s;
+    }
+    .cta-card button:hover, .btn:hover { background:#2563eb; }
+    .cta-card .links { margin-top:1rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+    .cta-card .links a {
+      color:var(--accent); text-decoration:none; font-size:.85rem; font-weight:500;
+    }
+    .cta-card .links a:hover { text-decoration:underline; }
+
+    /* Section */
+    .section { margin-bottom:2rem; }
+    .section h2 { font-size:1.2rem; font-weight:700; margin-bottom:1rem; padding-bottom:.5rem; border-bottom:1px solid var(--border); }
+
+    /* Grid */
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:.7rem; }
+    .grid a {
+      display:block; padding:.75rem 1rem; background:var(--surface); border:1px solid var(--border);
+      border-radius:8px; text-decoration:none; color:var(--text); font-size:.88rem;
+      transition: background .15s, border-color .15s;
+    }
+    .grid a:hover { background:var(--surface-hover); border-color:var(--accent); }
+    .grid a .sub { color:var(--text-muted); font-size:.75rem; margin-top:2px; }
+
+    /* How-to */
+    .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
+    .step {
+      background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+      padding:1.2rem;
+    }
+    .step .num { font-size:.75rem; color:var(--accent); font-weight:700; text-transform:uppercase; margin-bottom:.4rem; }
+    .step h3 { font-size:.95rem; margin-bottom:.3rem; }
+    .step p { color:var(--text-muted); font-size:.82rem; line-height:1.5; }
+    .step code { background:#1e293b; padding:2px 5px; border-radius:4px; font-size:.78rem; word-break:break-all; }
+
+    footer { text-align:center; padding:2rem; color:var(--text-muted); font-size:.8rem; border-top:1px solid var(--border); }
+    footer a { color:var(--accent); text-decoration:none; }
+
+    @media(max-width:600px) {
+      .hero h1 { font-size:1.7rem; }
+      .cta-card .url-box { flex-direction:column; }
+      .grid { grid-template-columns:1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>⚽ FIFA World Cup 2026™</h1>
+  <p>Subscribe to live-updating calendar files for all 104 matches. Powered by official FIFA data.</p>
+  <span class="badge">🟢 Data synced from api.fifa.com</span>
+</div>
+
+<div class="container">
+
+  <!-- Full Tournament CTA -->
+  <div class="cta-card">
+    <h2>📅 Full Tournament — 104 Matches</h2>
+    <p style="color:var(--text-muted);font-size:.9rem;">One calendar with every match from June 11 to July 19, 2026.</p>
+    <div class="url-box">
+      <input type="text" id="mainUrl" value="webcal://manuel-crespo.github.io/worldcup-2026-calendar-byFIFA/full-worldcup-2026.ics" readonly>
+      <button onclick="copyUrl('mainUrl')">📋 Copy</button>
+    </div>
+    <div class="links">
+      <a href="webcal://manuel-crespo.github.io/worldcup-2026-calendar-byFIFA/full-worldcup-2026.ics">📲 Subscribe (webcal)</a>
+      <a href="full-worldcup-2026.ics" download>⬇️ Download .ics</a>
+      <a href="knockout-stage.ics" download>🏆 Knockout only</a>
+    </div>
+  </div>
+
+  <!-- Groups -->
+  <div class="section">
+    <h2>📋 By Group</h2>
+    <div class="grid">
+      <a href="groups/group-a.ics"><div>🇲🇽🇿🇦🇰🇷🇨🇿 Group A</div><div class="sub">Mexico · South Africa · Korea · Czechia</div></a>
+      <a href="groups/group-b.ics"><div>🇨🇦🇧🇦🇶🇦🇨🇭 Group B</div><div class="sub">Canada · Bosnia · Qatar · Switzerland</div></a>
+      <a href="groups/group-c.ics"><div>🇧🇷🇲🇦🇭🇹🏴󠁧󠁢󠁳󠁣󠁴󠁿 Group C</div><div class="sub">Brazil · Morocco · Haiti · Scotland</div></a>
+      <a href="groups/group-d.ics"><div>🇺🇸🇵🇾🇹🇷🇦🇺 Group D</div><div class="sub">USA · Paraguay · Türkiye · Australia</div></a>
+      <a href="groups/group-e.ics"><div>🇩🇪🇨🇼🇨🇮🇪🇨 Group E</div><div class="sub">Germany · Curaçao · Ivory Coast · Ecuador</div></a>
+      <a href="groups/group-f.ics"><div>🇳🇱🇯🇵🇸🇪🇹🇳 Group F</div><div class="sub">Netherlands · Japan · Sweden · Tunisia</div></a>
+      <a href="groups/group-g.ics"><div>🇧🇪🇪🇬🇮🇷🇳🇿 Group G</div><div class="sub">Belgium · Egypt · Iran · New Zealand</div></a>
+      <a href="groups/group-h.ics"><div>🇪🇸🇨🇻🇸🇦🇺🇾 Group H</div><div class="sub">Spain · Cape Verde · Saudi Arabia · Uruguay</div></a>
+      <a href="groups/group-i.ics"><div>🇫🇷🇸🇳🇮🇶🇳🇴 Group I</div><div class="sub">France · Senegal · Iraq · Norway</div></a>
+      <a href="groups/group-j.ics"><div>🇦🇷🇩🇿🇦🇹🇯🇴 Group J</div><div class="sub">Argentina · Algeria · Austria · Jordan</div></a>
+      <a href="groups/group-k.ics"><div>🇵🇹🇨🇩🇺🇿🇨🇴 Group K</div><div class="sub">Portugal · Congo DR · Uzbekistan · Colombia</div></a>
+      <a href="groups/group-l.ics"><div>🏴󠁧󠁢󠁥󠁮󠁧󠁿🇭🇷🇬🇭🇵🇦 Group L</div><div class="sub">England · Croatia · Ghana · Panama</div></a>
+    </div>
+  </div>
+
+  <!-- Teams -->
+  <div class="section">
+    <h2>🏴 By Team</h2>
+    <div class="grid">
+      <a href="teams/algeria.ics">🇩🇿 Algeria</a>
+      <a href="teams/argentina.ics">🇦🇷 Argentina</a>
+      <a href="teams/australia.ics">🇦🇺 Australia</a>
+      <a href="teams/austria.ics">🇦🇹 Austria</a>
+      <a href="teams/belgium.ics">🇧🇪 Belgium</a>
+      <a href="teams/bosnia-and-herzegovina.ics">🇧🇦 Bosnia</a>
+      <a href="teams/brazil.ics">🇧🇷 Brazil</a>
+      <a href="teams/canada.ics">🇨🇦 Canada</a>
+      <a href="teams/cape-verde.ics">🇨🇻 Cape Verde</a>
+      <a href="teams/colombia.ics">🇨🇴 Colombia</a>
+      <a href="teams/congo-dr.ics">🇨🇩 Congo DR</a>
+      <a href="teams/croatia.ics">🇭🇷 Croatia</a>
+      <a href="teams/curaao.ics">🇨🇼 Curaçao</a>
+      <a href="teams/czechia.ics">🇨🇿 Czechia</a>
+      <a href="teams/ecuador.ics">🇪🇨 Ecuador</a>
+      <a href="teams/egypt.ics">🇪🇬 Egypt</a>
+      <a href="teams/england.ics">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</a>
+      <a href="teams/france.ics">🇫🇷 France</a>
+      <a href="teams/germany.ics">🇩🇪 Germany</a>
+      <a href="teams/ghana.ics">🇬🇭 Ghana</a>
+      <a href="teams/haiti.ics">🇭🇹 Haiti</a>
+      <a href="teams/iran.ics">🇮🇷 Iran</a>
+      <a href="teams/iraq.ics">🇮🇶 Iraq</a>
+      <a href="teams/ivory-coast.ics">🇨🇮 Ivory Coast</a>
+      <a href="teams/japan.ics">🇯🇵 Japan</a>
+      <a href="teams/jordan.ics">🇯🇴 Jordan</a>
+      <a href="teams/korea-republic.ics">🇰🇷 Korea Republic</a>
+      <a href="teams/mexico.ics">🇲🇽 Mexico</a>
+      <a href="teams/morocco.ics">🇲🇦 Morocco</a>
+      <a href="teams/netherlands.ics">🇳🇱 Netherlands</a>
+      <a href="teams/new-zealand.ics">🇳🇿 New Zealand</a>
+      <a href="teams/norway.ics">🇳🇴 Norway</a>
+      <a href="teams/panama.ics">🇵🇦 Panama</a>
+      <a href="teams/paraguay.ics">🇵🇾 Paraguay</a>
+      <a href="teams/portugal.ics">🇵🇹 Portugal</a>
+      <a href="teams/qatar.ics">🇶🇦 Qatar</a>
+      <a href="teams/saudi-arabia.ics">🇸🇦 Saudi Arabia</a>
+      <a href="teams/scotland.ics">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</a>
+      <a href="teams/senegal.ics">🇸🇳 Senegal</a>
+      <a href="teams/south-africa.ics">🇿🇦 South Africa</a>
+      <a href="teams/spain.ics">🇪🇸 Spain</a>
+      <a href="teams/sweden.ics">🇸🇪 Sweden</a>
+      <a href="teams/switzerland.ics">🇨🇭 Switzerland</a>
+      <a href="teams/trkiye.ics">🇹🇷 Türkiye</a>
+      <a href="teams/tunisia.ics">🇹🇳 Tunisia</a>
+      <a href="teams/united-states.ics">🇺🇸 United States</a>
+      <a href="teams/uruguay.ics">🇺🇾 Uruguay</a>
+      <a href="teams/uzbekistan.ics">🇺🇿 Uzbekistan</a>
+    </div>
+  </div>
+
+  <!-- Stadiums -->
+  <div class="section">
+    <h2>🏟️ By Stadium</h2>
+    <div class="grid">
+      <a href="stadiums/estadio-azteca.ics"><div>Estadio Azteca</div><div class="sub">🇲🇽 Mexico City</div></a>
+      <a href="stadiums/estadio-akron.ics"><div>Estadio Akron</div><div class="sub">🇲🇽 Guadalajara</div></a>
+      <a href="stadiums/estadio-bbva.ics"><div>Estadio BBVA</div><div class="sub">🇲🇽 Monterrey</div></a>
+      <a href="stadiums/metlife-stadium.ics"><div>MetLife Stadium</div><div class="sub">🇺🇸 New York</div></a>
+      <a href="stadiums/sofi-stadium.ics"><div>SoFi Stadium</div><div class="sub">🇺🇸 Los Angeles</div></a>
+      <a href="stadiums/att-stadium.ics"><div>AT&T Stadium</div><div class="sub">🇺🇸 Dallas</div></a>
+      <a href="stadiums/mercedes-benz-stadium.ics"><div>Mercedes-Benz Stadium</div><div class="sub">🇺🇸 Atlanta</div></a>
+      <a href="stadiums/arrowhead-stadium.ics"><div>Arrowhead Stadium</div><div class="sub">🇺🇸 Kansas City</div></a>
+      <a href="stadiums/nrg-stadium.ics"><div>NRG Stadium</div><div class="sub">🇺🇸 Houston</div></a>
+      <a href="stadiums/lincoln-financial-field.ics"><div>Lincoln Financial Field</div><div class="sub">🇺🇸 Philadelphia</div></a>
+      <a href="stadiums/levis-stadium.ics"><div>Levi's Stadium</div><div class="sub">🇺🇸 San Francisco</div></a>
+      <a href="stadiums/hard-rock-stadium.ics"><div>Hard Rock Stadium</div><div class="sub">🇺🇸 Miami</div></a>
+      <a href="stadiums/lumen-field.ics"><div>Lumen Field</div><div class="sub">🇺🇸 Seattle</div></a>
+      <a href="stadiums/gillette-stadium.ics"><div>Gillette Stadium</div><div class="sub">🇺🇸 Boston</div></a>
+      <a href="stadiums/bmo-field.ics"><div>BMO Field</div><div class="sub">🇨🇦 Toronto</div></a>
+      <a href="stadiums/bc-place.ics"><div>BC Place</div><div class="sub">🇨🇦 Vancouver</div></a>
+    </div>
+  </div>
+
+  <!-- Knockout -->
+  <div class="section">
+    <h2>🏆 Knockout Rounds</h2>
+    <div class="grid">
+      <a href="knockout-stage.ics"><div>🏆 All Knockout (32 matches)</div></a>
+      <a href="knockout/round-of-32.ics"><div>Round of 32 (16)</div></a>
+      <a href="knockout/round-of-16.ics"><div>Round of 16 (8)</div></a>
+      <a href="knockout/quarter-final.ics"><div>Quarter-finals (4)</div></a>
+      <a href="knockout/semi-final.ics"><div>Semi-finals (2)</div></a>
+      <a href="knockout/third-place-match.ics"><div>Third-place match</div></a>
+      <a href="knockout/final.ics"><div>⭐ Final</div></a>
+    </div>
+  </div>
+
+  <!-- Host Countries -->
+  <div class="section">
+    <h2>🌎 By Host Country</h2>
+    <div class="grid">
+      <a href="hosts/mexico.ics"><div>🇲🇽 Mexico</div><div class="sub">13 matches · 3 stadiums</div></a>
+      <a href="hosts/united-states.ics"><div>🇺🇸 United States</div><div class="sub">78 matches · 11 stadiums</div></a>
+      <a href="hosts/canada.ics"><div>🇨🇦 Canada</div><div class="sub">13 matches · 2 stadiums</div></a>
+    </div>
+  </div>
+
+  <!-- How to subscribe -->
+  <div class="section">
+    <h2>📲 How to Subscribe</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">Google Calendar</div>
+        <h3>From URL</h3>
+        <p>Settings → Add calendar → From URL → paste the <code>webcal://</code> link.</p>
+      </div>
+      <div class="step">
+        <div class="num">Apple Calendar</div>
+        <h3>Subscribe</h3>
+        <p>File → New Calendar Subscription → paste the URL. On iOS, open the <code>webcal://</code> link in Safari.</p>
+      </div>
+      <div class="step">
+        <div class="num">Outlook</div>
+        <h3>From Internet</h3>
+        <p>Add Calendar → From Internet → paste the <code>.ics</code> URL.</p>
+      </div>
+      <div class="step">
+        <div class="num">Any App</div>
+        <h3>Download</h3>
+        <p>Click any link above to download the <code>.ics</code> file and import it manually.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Data sourced from <a href="https://api.fifa.com" target="_blank">api.fifa.com</a> · Updated daily · <a href="https://github.com/Manuel-Crespo/worldcup-2026-calendar-byFIFA" target="_blank">GitHub</a></p>
+  <p style="margin-top:.4rem;">Not affiliated with FIFA. Made with ❤️ for football fans worldwide.</p>
+</footer>
+
+<script>
+function copyUrl(id) {
+  const input = document.getElementById(id);
+  navigator.clipboard.writeText(input.value).then(() => {
+    const btn = input.nextElementSibling;
+    btn.textContent = '✅ Copied!';
+    setTimeout(() => btn.textContent = '📋 Copy', 2000);
+  });
+}
+</script>
+</body>
+</html>

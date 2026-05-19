@@ -2,7 +2,7 @@ name: Update & Publish Calendars
 
 on:
   schedule:
-    # Run daily at 06:00 UTC
+    # Run daily at 06:00 UTC (midnight CST)
     - cron: '0 6 * * *'
   push:
     branches: [main]
@@ -47,62 +47,26 @@ jobs:
       - name: Generate calendars
         run: pnpm generate
 
-      - name: Commit updated calendars
+      - name: Commit updated data and calendars
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/
+          git add src/data/matches.json output/
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: update calendar files [skip ci]"
+            git commit -m "chore: update calendars from FIFA API [skip ci]"
             git push
           fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Create Pages content
+      - name: Build site
         run: |
           mkdir -p _site
           cp -r output/* _site/
-          cat > _site/index.html << 'EOF'
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>FIFA World Cup 2026 Calendar</title>
-            <style>
-              body { font-family: system-ui, -apple-system, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; background: #0a0a0a; color: #e5e5e5; }
-              h1 { font-size: 2rem; }
-              a { color: #60a5fa; text-decoration: none; }
-              a:hover { text-decoration: underline; }
-              .card { background: #1a1a2e; border-radius: 12px; padding: 1.5rem; margin: 1rem 0; border: 1px solid #333; }
-              code { background: #2a2a3e; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
-            </style>
-          </head>
-          <body>
-            <h1>⚽ FIFA World Cup 2026™ Calendar</h1>
-            <p>Subscribe to live-updating calendar files for the FIFA World Cup 2026.</p>
-            <div class="card">
-              <h2>📅 Available Calendars</h2>
-              <ul>
-                <li><a href="full-worldcup-2026.ics">Full Tournament (104 matches)</a></li>
-                <li><a href="knockout-stage.ics">Knockout Stage Only</a></li>
-              </ul>
-              <h3>Groups</h3>
-              <ul id="groups"></ul>
-              <h3>Teams</h3>
-              <ul id="teams"></ul>
-            </div>
-            <div class="card">
-              <h2>📲 How to Subscribe</h2>
-              <p>Copy the URL and add as a calendar subscription in your app.</p>
-            </div>
-          </body>
-          </html>
-          EOF
+          cp src/pages/index.html _site/index.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
