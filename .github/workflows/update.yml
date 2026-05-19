@@ -27,12 +27,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
 
       - name: Enable corepack and install pnpm
         run: |
           corepack enable
-          corepack prepare pnpm@9.15.4 --activate
+          corepack prepare pnpm@11.1.3 --activate
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -68,7 +68,7 @@ jobs:
           cp src/pages/index.html _site/index.html
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
@@ -81,4 +81,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
