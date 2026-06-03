@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-06-02T07:54:32.079Z",
+  "_fetchedAt": "2026-06-03T07:57:58.460Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -46,7 +46,7 @@
       "timezone": "America/Mexico_City",
       "timeDefined": true,
       "placeholderA": "A3",
-      "placeholderB": "UEFA PO D",
+      "placeholderB": "A4",
       "description": ""
     },
     {
@@ -69,7 +69,7 @@
       "timezone": "America/Toronto",
       "timeDefined": true,
       "placeholderA": "B1",
-      "placeholderB": "UEFA PO A",
+      "placeholderB": "B2",
       "description": ""
     },
     {
@@ -138,7 +138,7 @@
       "timezone": "America/Vancouver",
       "timeDefined": true,
       "placeholderA": "D3",
-      "placeholderB": "UEFA PO C",
+      "placeholderB": "D4",
       "description": ""
     },
     {
@@ -156,7 +156,7 @@
       "stadiumId": "new_york_new_jersey_stadium",
       "stadiumFifaName": "New York/New Jersey Stadium",
       "stadiumRealName": "MetLife Stadium",
-      "city": "New York",
+      "city": "New Jersey",
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
@@ -275,7 +275,7 @@
       "country": "MEX",
       "timezone": "America/Monterrey",
       "timeDefined": true,
-      "placeholderA": "UEFA PO B",
+      "placeholderA": "F3",
       "placeholderB": "F4",
       "description": ""
     },
@@ -386,7 +386,7 @@
       "stadiumId": "new_york_new_jersey_stadium",
       "stadiumFifaName": "New York/New Jersey Stadium",
       "stadiumRealName": "MetLife Stadium",
-      "city": "New York",
+      "city": "New Jersey",
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
@@ -413,7 +413,7 @@
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
-      "placeholderA": "FIFA PO 2",
+      "placeholderA": "I3",
       "placeholderB": "I4",
       "description": ""
     },
@@ -529,7 +529,7 @@
       "timezone": "America/Chicago",
       "timeDefined": true,
       "placeholderA": "K1",
-      "placeholderB": "FIFA PO 1",
+      "placeholderB": "K2",
       "description": ""
     },
     {
@@ -574,7 +574,7 @@
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
-      "placeholderA": "UEFA PO D",
+      "placeholderA": "A4",
       "placeholderB": "A2",
       "description": ""
     },
@@ -598,7 +598,7 @@
       "timezone": "America/Los_Angeles",
       "timeDefined": true,
       "placeholderA": "B4",
-      "placeholderB": "UEFA PO A",
+      "placeholderB": "B2",
       "description": ""
     },
     {
@@ -712,7 +712,7 @@
       "country": "USA",
       "timezone": "America/Los_Angeles",
       "timeDefined": true,
-      "placeholderA": "UEFA PO C",
+      "placeholderA": "D4",
       "placeholderB": "D2",
       "description": ""
     },
@@ -805,7 +805,7 @@
       "timezone": "America/Chicago",
       "timeDefined": true,
       "placeholderA": "F1",
-      "placeholderB": "UEFA PO B",
+      "placeholderB": "F3",
       "description": ""
     },
     {
@@ -938,7 +938,7 @@
       "stadiumId": "new_york_new_jersey_stadium",
       "stadiumFifaName": "New York/New Jersey Stadium",
       "stadiumRealName": "MetLife Stadium",
-      "city": "New York",
+      "city": "New Jersey",
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
@@ -966,7 +966,7 @@
       "timezone": "America/New_York",
       "timeDefined": true,
       "placeholderA": "I1",
-      "placeholderB": "FIFA PO 2",
+      "placeholderB": "I3",
       "description": ""
     },
     {
@@ -1104,7 +1104,7 @@
       "timezone": "America/Mexico_City",
       "timeDefined": true,
       "placeholderA": "K4",
-      "placeholderB": "FIFA PO 1",
+      "placeholderB": "K2",
       "description": ""
     },
     {
@@ -1195,7 +1195,7 @@
       "country": "USA",
       "timezone": "America/Los_Angeles",
       "timeDefined": true,
-      "placeholderA": "UEFA PO A",
+      "placeholderA": "B2",
       "placeholderB": "B3",
       "description": ""
     },
@@ -1218,7 +1218,7 @@
       "country": "MEX",
       "timezone": "America/Mexico_City",
       "timeDefined": true,
-      "placeholderA": "UEFA PO D",
+      "placeholderA": "A4",
       "placeholderB": "A1",
       "description": ""
     },
@@ -1283,7 +1283,7 @@
       "stadiumId": "new_york_new_jersey_stadium",
       "stadiumFifaName": "New York/New Jersey Stadium",
       "stadiumRealName": "MetLife Stadium",
-      "city": "New York",
+      "city": "New Jersey",
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
@@ -1311,7 +1311,7 @@
       "timezone": "America/Chicago",
       "timeDefined": true,
       "placeholderA": "F2",
-      "placeholderB": "UEFA PO B",
+      "placeholderB": "F3",
       "description": ""
     },
     {
@@ -1356,7 +1356,7 @@
       "country": "USA",
       "timezone": "America/Los_Angeles",
       "timeDefined": true,
-      "placeholderA": "UEFA PO C",
+      "placeholderA": "D4",
       "placeholderB": "D1",
       "description": ""
     },
@@ -1426,7 +1426,7 @@
       "timezone": "America/Toronto",
       "timeDefined": true,
       "placeholderA": "I2",
-      "placeholderB": "FIFA PO 2",
+      "placeholderB": "I3",
       "description": ""
     },
     {
@@ -1536,7 +1536,7 @@
       "stadiumId": "new_york_new_jersey_stadium",
       "stadiumFifaName": "New York/New Jersey Stadium",
       "stadiumRealName": "MetLife Stadium",
-      "city": "New York",
+      "city": "New Jersey",
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
@@ -1655,7 +1655,7 @@
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
-      "placeholderA": "FIFA PO 1",
+      "placeholderA": "K2",
       "placeholderB": "K3",
       "description": ""
     },
@@ -1766,7 +1766,7 @@
       "stadiumId": "new_york_new_jersey_stadium",
       "stadiumFifaName": "New York/New Jersey Stadium",
       "stadiumRealName": "MetLife Stadium",
-      "city": "New York",
+      "city": "New Jersey",
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
@@ -2088,7 +2088,7 @@
       "stadiumId": "new_york_new_jersey_stadium",
       "stadiumFifaName": "New York/New Jersey Stadium",
       "stadiumRealName": "MetLife Stadium",
-      "city": "New York",
+      "city": "New Jersey",
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
@@ -2387,7 +2387,7 @@
       "stadiumId": "new_york_new_jersey_stadium",
       "stadiumFifaName": "New York/New Jersey Stadium",
       "stadiumRealName": "MetLife Stadium",
-      "city": "New York",
+      "city": "New Jersey",
       "country": "USA",
       "timezone": "America/New_York",
       "timeDefined": true,
