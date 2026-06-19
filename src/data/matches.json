@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-06-18T07:57:19.264Z",
+  "_fetchedAt": "2026-06-19T08:08:00.262Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -1805,9 +1805,9 @@
       "dateUTC": "2026-07-01T01:00:00Z",
       "stage": "Round of 32",
       "group": null,
-      "home": "1A",
+      "home": "MEX",
       "away": "3CEFHI",
-      "homeName": "1A",
+      "homeName": "Mexico",
       "awayName": "3CEFHI",
       "stadiumId": "mexico_city_stadium",
       "stadiumFifaName": "Mexico City Stadium",
