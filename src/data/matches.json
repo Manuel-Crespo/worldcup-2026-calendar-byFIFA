@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-06-19T08:08:00.262Z",
+  "_fetchedAt": "2026-06-20T07:33:03.173Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -1851,9 +1851,9 @@
       "dateUTC": "2026-07-02T00:00:00Z",
       "stage": "Round of 32",
       "group": null,
-      "home": "1D",
+      "home": "USA",
       "away": "3BEFIJ",
-      "homeName": "1D",
+      "homeName": "USA",
       "awayName": "3BEFIJ",
       "stadiumId": "san_francisco_bay_area_stadium",
       "stadiumFifaName": "San Francisco Bay Area Stadium",
