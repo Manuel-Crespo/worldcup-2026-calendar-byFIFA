@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-06-20T07:33:03.173Z",
+  "_fetchedAt": "2026-06-21T07:51:41.031Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -1690,9 +1690,9 @@
       "dateUTC": "2026-06-29T20:30:00Z",
       "stage": "Round of 32",
       "group": null,
-      "home": "1E",
+      "home": "GER",
       "away": "3ABCDF",
-      "homeName": "1E",
+      "homeName": "Germany",
       "awayName": "3ABCDF",
       "stadiumId": "boston_stadium",
       "stadiumFifaName": "Boston Stadium",
