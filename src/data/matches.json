@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-06-22T08:20:33.709Z",
+  "_fetchedAt": "2026-06-23T07:28:58.034Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -1966,9 +1966,9 @@
       "dateUTC": "2026-07-03T22:00:00Z",
       "stage": "Round of 32",
       "group": null,
-      "home": "1J",
+      "home": "ARG",
       "away": "2H",
-      "homeName": "1J",
+      "homeName": "Argentina",
       "awayName": "2H",
       "stadiumId": "miami_stadium",
       "stadiumFifaName": "Miami Stadium",
