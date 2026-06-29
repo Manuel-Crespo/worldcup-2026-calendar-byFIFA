@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-06-28T07:33:57.473Z",
+  "_fetchedAt": "2026-06-29T08:02:27.173Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -2058,9 +2058,9 @@
       "dateUTC": "2026-07-04T17:00:00Z",
       "stage": "Round of 16",
       "group": null,
-      "home": "W73",
+      "home": "CAN",
       "away": "W75",
-      "homeName": "W73",
+      "homeName": "Canada",
       "awayName": "W75",
       "stadiumId": "houston_stadium",
       "stadiumFifaName": "Houston Stadium",
