@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-07-05T09:16:40.390Z",
+  "_fetchedAt": "2026-07-06T10:52:35.573Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -2100,8 +2100,8 @@
       "matchNumber": 92,
       "fifaMatchId": "400021531",
       "date": "2026-07-05",
-      "time": "18:00",
-      "dateUTC": "2026-07-06T00:00:00Z",
+      "time": "19:00",
+      "dateUTC": "2026-07-06T01:00:00Z",
       "stage": "Round of 16",
       "group": null,
       "home": "MEX",
@@ -2265,10 +2265,10 @@
       "dateUTC": "2026-07-11T21:00:00Z",
       "stage": "Quarter-final",
       "group": null,
-      "home": "W91",
-      "away": "W92",
-      "homeName": "W91",
-      "awayName": "W92",
+      "home": "NOR",
+      "away": "ENG",
+      "homeName": "Norway",
+      "awayName": "England",
       "stadiumId": "miami_stadium",
       "stadiumFifaName": "Miami Stadium",
       "stadiumRealName": "Hard Rock Stadium",
