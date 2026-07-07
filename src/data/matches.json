@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-07-06T10:52:35.573Z",
+  "_fetchedAt": "2026-07-07T09:54:21.516Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -2242,10 +2242,10 @@
       "dateUTC": "2026-07-10T19:00:00Z",
       "stage": "Quarter-final",
       "group": null,
-      "home": "W93",
-      "away": "W94",
-      "homeName": "W93",
-      "awayName": "W94",
+      "home": "ESP",
+      "away": "BEL",
+      "homeName": "Spain",
+      "awayName": "Belgium",
       "stadiumId": "los_angeles_stadium",
       "stadiumFifaName": "Los Angeles Stadium",
       "stadiumRealName": "SoFi Stadium",
