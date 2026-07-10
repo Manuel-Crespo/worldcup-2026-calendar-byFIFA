@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-07-09T09:57:20.975Z",
+  "_fetchedAt": "2026-07-10T09:48:00.063Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -2311,9 +2311,9 @@
       "dateUTC": "2026-07-14T19:00:00Z",
       "stage": "Semi-final",
       "group": null,
-      "home": "W97",
+      "home": "FRA",
       "away": "W98",
-      "homeName": "W97",
+      "homeName": "France",
       "awayName": "W98",
       "stadiumId": "dallas_stadium",
       "stadiumFifaName": "Dallas Stadium",
