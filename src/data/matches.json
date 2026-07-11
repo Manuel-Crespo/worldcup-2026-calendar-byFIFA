@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-07-10T09:48:00.063Z",
+  "_fetchedAt": "2026-07-11T08:05:46.173Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -2312,9 +2312,9 @@
       "stage": "Semi-final",
       "group": null,
       "home": "FRA",
-      "away": "W98",
+      "away": "ESP",
       "homeName": "France",
-      "awayName": "W98",
+      "awayName": "Spain",
       "stadiumId": "dallas_stadium",
       "stadiumFifaName": "Dallas Stadium",
       "stadiumRealName": "AT&T Stadium",
