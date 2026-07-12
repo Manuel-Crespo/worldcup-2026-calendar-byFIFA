@@ -1,6 +1,6 @@
 {
   "_source": "Official FIFA API (api.fifa.com)",
-  "_fetchedAt": "2026-07-11T08:05:46.173Z",
+  "_fetchedAt": "2026-07-12T08:27:02.004Z",
   "_seasonId": "285023",
   "matches": [
     {
@@ -2334,10 +2334,10 @@
       "dateUTC": "2026-07-15T19:00:00Z",
       "stage": "Semi-final",
       "group": null,
-      "home": "W99",
-      "away": "W100",
-      "homeName": "W99",
-      "awayName": "W100",
+      "home": "ENG",
+      "away": "ARG",
+      "homeName": "England",
+      "awayName": "Argentina",
       "stadiumId": "atlanta_stadium",
       "stadiumFifaName": "Atlanta Stadium",
       "stadiumRealName": "Mercedes-Benz Stadium",
